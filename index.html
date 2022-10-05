@@ -4,118 +4,922 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clevr | Welcome to our store</title>
-    <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
-    <!-- font (poppins)-->
+    <!-- title -->
+    <!-- <title>Clevr | find your books here</title> -->
+
+    <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati&family=Philosopher&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <!-- jQuery link-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- icons -->
     <!-- bootstrap icons -->
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <!-- font awesome icons-->
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
-    <!-- bootstrap link -->
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap link  -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    /> -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- swiper -->
 
-    <!-- bootstrap css -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    />
-    <!-- css-->
-    <link rel="stylesheet" href="/css/clevr.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="clevr.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-light"></nav>
+  <body class="body">
+    <nav id="navbar" class="navbar navbar-expand p-0">
+    
+    </nav>
     <!--  -->
-
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        spaceBetween: 30,
-        // grabCursor: true,
-        navigation: {
-          nextEl: '.next',
-          prevEl: '.prev',
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-          },
-          550: {
-            slidesPerView: 2,
-          },
-          780: {
-            slidesPerView: 3,
-          },
-          1025: {
-            slidesPerView: 4,
-          },
-        },
-      });
-      var swiper = new Swiper('.mySwiper1', {
-        slidesPerView: 3,
-
-        slidesPerGroup: 2,
-        slidesPerGroupSkip: 1,
-
-        spaceBetween: 55,
-
-        loop: true,
-
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        },
-      });
-
-      var swiper = new Swiper('.mySwiper2', {
-        slidesPerView: 3,
-
-        slidesPerGroup: 3,
-
-        spaceBetween: 50,
-
-        loop: true,
-
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: 'swiper-button-prev',
-        },
-
-        // autoplay: {
-        //   delay: 2000,
-        //   disableOnInteraction: false,
-        // },
-      });
-    </script>
-    <!-- scripts -->
+    <main>
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 welcome-txt">
+              <h2>
+                welcome <span class="text-lowercase"> to </span>
+                <strong> clevr</strong> online book store
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis, repellendus voluptatem accusantium aliquid quos vero
+                provident ea eligendi expedita culpa minus libero
+              </p>
+  
+              <div class="d-flex">
+                <div class="min-inf col-lg-4">
+                  <div class="d-flex">
+                    <img src="images/books.png" alt="" />
+                    <span class="">68+k</span>
+                  </div>
+                  <p>book collection</p>
+                </div>
+                <div class="min-inf">
+                  <div class="d-flex">
+                    <img src="images/customers.png" alt="" />
+                    <span class="">25,634</span>
+                  </div>
+                  <p>customers</p>
+                </div>
+              </div>
+  
+              <div class="col-lg-8 my-3">
+                <a href="" class="view-collection"
+                  >Go to Collections
+                  <span> <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 my-auto  p-0">
+              <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://i.pinimg.com/236x/2b/d1/b1/2bd1b174400a8f258672b4e8ceeaceab.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://i.pinimg.com/564x/c1/0a/e9/c10ae91f19ac8aa68e2f6b3e2bd34545.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://i.pinimg.com/236x/a0/96/ff/a096ff3bafb7786b59ef9ba9d3e7ddf2.jpg"
+                      alt=""
+                    />
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img
+                      src="https://i.pinimg.com/236x/95/95/cf/9595cf27c875876cb87bf625d8a880bc.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://i.pinimg.com/236x/71/d4/68/71d468eb9c5d0ae01b4352215f9b7ea3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://i.pinimg.com/236x/ad/b1/34/adb13497b2fc39caf2df456508f1ddfd.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div dir="rtl" class="swiper-pagination pag"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <!-- ofers დასრულებული-->
+      <section id="services">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-xl-3 col-md-5 col-10">
+              <div class="img">
+                <img src="images/quick-deliv.png" alt="" />
+              </div>
+              <h5>quick delivery</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere a
+                deserunt nostrum unde voluptatum voluptate nam lorem ipsum dolor
+                sit amet
+              </p>
+            </div>
+            <div class="col-xl-3 col-md-5 col-10 mb-4">
+              <div class="img">
+                <img src="images/secure-payment.png" alt="" />
+              </div>
+  
+              <h5>secure payment</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Veritatis asperiores facilis nihil, sed officia quibusdam dolores
+                est libero ipsa enim
+              </p>
+            </div>
+            <div class="col-xl-3 col-md-5 col-10 mb-4">
+              <div class="img">
+                <img src="images/best-quality.png" alt="" />
+              </div>
+  
+              <h5>best quality</h5>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea sed
+                praesentium mollitia doloribus corporis cupiditate repudiandae
+              </p>
+            </div>
+            <div class="col-xl-3 col-md-5 col-9 mb-4">
+              <div class="img">
+                <img src="images/guarantee.png" alt="" />
+              </div>
+  
+              <h5>return guarantee</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                quod temporibus quaerat perspiciatis eum illum provident iure
+                sequi
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- best sellers დასრულებული -->
+      <section id="best-sellers">
+        <div class="container">
+          <div class="swiper mySwiper2 ">
+            <div class="bestseller-header d-flex justify-content-between py-5 ">
+              <h3 class="text-capitalize">best sellers</h3>
+              <a href="">View more <span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="swiper-wrapper">
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <div class="book-cover">
+                  <img
+                    src="https://i.pinimg.com/236x/2b/d1/b1/2bd1b174400a8f258672b4e8ceeaceab.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="book-descr">
+                  <div class="book-info">
+                    <span class="category">category</span>
+                    <span class="rate"><i class="fa-solid fa-star"></i>5.0</span>
+                  </div>
+                  <div class="book-title">
+                    <h5 class="title">title</h5>
+                    <p class="author">author</p>
+                  </div>
+                  <div class="book-price">
+                    <span class="current-price">$24.99</span>
+                    <span class="price">$30</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="book-cover">
+                  <img
+                    src="https://i.pinimg.com/236x/95/95/cf/9595cf27c875876cb87bf625d8a880bc.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="book-descr">
+                  <div class="book-info">
+                    <span class="category">category</span>
+                    <span class="rate"><i class="fa-solid fa-star"></i>5.0</span>
+                  </div>
+                  <div class="book-title">
+                    <h5 class="title">title</h5>
+                    <p class="author">author</p>
+                  </div>
+                  <div class="book-price">
+                    <span class="current-price">$24.99</span>
+                    <span class="price">$30</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="book-cover">
+                  <img
+                    src="https://i.pinimg.com/236x/ad/b1/34/adb13497b2fc39caf2df456508f1ddfd.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="book-descr">
+                  <div class="book-info">
+                    <span class="category">category</span>
+                    <span class="rate"><i class="fa-solid fa-star"></i>5.0</span>
+                  </div>
+                  <div class="book-title">
+                    <h5 class="title">title</h5>
+                    <p class="author">author</p>
+                  </div>
+                  <div class="book-price">
+                    <span class="current-price">$24.99</span>
+                    <span class="price">$30</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <div class="book-cover">
+                  <img
+                    src="https://i.pinimg.com/236x/2b/d1/b1/2bd1b174400a8f258672b4e8ceeaceab.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="book-descr">
+                  <div class="book-info">
+                    <span class="category">category</span>
+                    <span class="rate"><i class="fa-solid fa-star"></i>5.0</span>
+                  </div>
+                  <div class="book-title">
+                    <h5 class="title">title</h5>
+                    <p class="author">author</p>
+                  </div>
+                  <div class="book-price">
+                    <span class="current-price">$24.99</span>
+                    <span class="price">$30</span>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide">
+                <div class="book-cover">
+                  <img
+                    src="https://i.pinimg.com/236x/2b/d1/b1/2bd1b174400a8f258672b4e8ceeaceab.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="book-descr">
+                  <div class="book-info">
+                    <span class="category">category</span>
+                    <span class="rate"><i class="fa-solid fa-star"></i>5.0</span>
+                  </div>
+                  <div class="book-title">
+                    <h5 class="title">title</h5>
+                    <p class="author">author</p>
+                  </div>
+                  <div class="book-price">
+                    <span class="current-price">$24.99</span>
+                    <span class="price">$30</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+       <div>   </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    
+            
+          </div>
+        </div>
+      </section>
+      <!-- latest news დასრულებული -->
+      <section id="latest-news">
+        <div class="container">
+          <div class="text-center info">
+            <h3>latest news</h3>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              possimus ea amet nesciunt nihil odio! Magni beatae quo ipsum numquam
+            </p>
+          </div>
+          <div
+            class="row justify-content-md-between justify-content-center news-content"
+          >
+            <!-- 1 -->
+            <div class="col-xl-3 col-md-6 col-9 mb-4">
+              <div class="card">
+                <div class="header">
+                  <img
+                    src="https://i.pinimg.com/236x/e1/d6/f2/e1d6f2b4a7b5553e800e102b3175fe35.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+  
+                <div class="card-body">
+                  <h6 class="card-title">
+                    Why reading is important for our children?
+                  </h6>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Facilis quam delectus, laborum non doloribus quas...
+                    <span class="continue-read">Continue reading</span>
+                  </p>
+  
+                  <div class="list-group-item d-flex align-items-start">
+                    <div class="news-img">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ms-4 news-author">
+                      <div class="fw-bold text-capitalize py-1">james wong</div>
+                      <span> 2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="col-xl-3 col-md-6 col-9 mb-4">
+              <div class="card">
+                <div class="header">
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+  
+                <div class="card-body">
+                  <h6 class="card-title">
+                    Why reading is important for our children?
+                  </h6>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Facilis quam delectus, laborum non doloribus quas...
+                    <span class="continue-read">Continue reading</span>
+                  </p>
+  
+                  <div class="list-group-item d-flex align-items-start">
+                    <div class="news-img">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ms-4 news-author">
+                      <div class="fw-bold text-capitalize py-1">james wong</div>
+                      <span> 2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-xl-3 col-md-6 col-9 mb-4">
+              <div class="card">
+                <div class="header">
+                  <img
+                    src="https://i.pinimg.com/564x/ea/b6/55/eab6557cf739a431fae693a2790c6c4c.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+  
+                <div class="card-body">
+                  <h6 class="card-title">
+                    Why reading is important for our children?
+                  </h6>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Facilis quam delectus, laborum non doloribus quas...
+                    <span class="continue-read">Continue reading</span>
+                  </p>
+  
+                  <div class="list-group-item d-flex align-items-start">
+                    <div class="news-img">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ms-4 news-author">
+                      <div class="fw-bold text-capitalize py-1">james wong</div>
+                      <span> 2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-xl-3 col-md-6 col-9 mb-4">
+              <div class="card">
+                <div class="header">
+                  <img
+                    src="https://i.pinimg.com/564x/36/76/b9/3676b9186741118656005fe710bb7c65.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+  
+                <div class="card-body">
+                  <h6 class="card-title">
+                    Why reading is important for our children?
+                  </h6>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Facilis quam delectus, laborum non doloribus quas...
+                    <span class="continue-read">Continue reading</span>
+                  </p>
+  
+                  <div class="list-group-item d-flex align-items-start">
+                    <div class="news-img">
+                      <img
+                        src="data:image/jpeg;base64,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"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ms-4 news-author">
+                      <div class="fw-bold text-capitalize py-1">james wong</div>
+                      <span> 2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="d-block view-more view-more-different">
+            view more <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+      <!-- testimonials დასრულებული-->
+      <section id="testimonials">
+        <div class="container">
+          <div class="text-center info">
+            <h3>testimonials</h3>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              possimus ea amet nesciunt nihil odio! Magni beatae quo ipsum numquam
+            </p>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 8 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 9 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 10 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 11 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 12 -->
+              <div class="swiper-slide">
+                <div class="testimonials">
+                  <div class="rating">
+                    <img src="images/rating4.png" alt="" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Culpa corrupti repellendus hic dicta consectetur! Pariatur
+                    sint iusto vel inventore culpa.
+                  </p>
+                  <div class="list-group-item d-flex justify-content-between">
+                    <div class="testimonial-author">
+                      <div class="fw-bold py-1">james wong</div>
+                      <span> book lovers</span>
+                    </div>
+                    <div class="testimonial-img">
+                      <img
+                        src="https://images.pexels.com/photos/4769490/pexels-photo-4769490.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navigation">
+              <div class="prev">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="next">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- mini info-->
+      <section id="mini-info">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3 content">
+              <div class="d-flex">
+                <img src="images/store.png" alt="" />
+                <span class="display-6">268</span>
+              </div>
+              <p>our stores around the world</p>
+            </div>
+            <div class="col-lg-3 content">
+              <div class="d-flex">
+                <img src="images/customers.png" alt="" />
+                <span class="display-6">25,634</span>
+              </div>
+              <p>our happy customers</p>
+            </div>
+            <div class="col-lg-3 content">
+              <div class="d-flex">
+                <img src="images/books.png" alt="" />
+                <span class="display-6">68+k</span>
+              </div>
+              <p>book colection</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- subscribe -->
+      <section id="subscribe">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7 txt">
+              <div class="detale1">
+                <div class="dot">
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                </div>
+                <div class="dot">
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                </div>
+                <div class="dot">
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                </div>
+                <div class="dot">
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                </div>
+                <div class="dot">
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                  <div>.</div>
+                </div>
+              </div>
+              <p>
+                subscribe our newsletter <br class="br" />
+                for newest books updates
+              </p>
+            </div>
+            <div class="col-lg-5 form">
+              <form
+                action="
+              "
+              >
+                <input type="text" placeholder="Type your email here" />
+                <button type="button">subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      
+    </main>
+    <footer id="footer"></footer>
+    <!--  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/home.js"></script>
+    <script src="js/main.js"></script>
 
-    <!-- main script -->
+   
+
+    
   </body>
 </html>
+
