@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clevr | find your book here..</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <!-- font (poppins)-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati&family=Philosopher&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jQuery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- icons -->
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- font awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- swiper -->
+
+    <!-- bootstrap css -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <!-- css-->
+    <link rel="stylesheet" href="/css/clevr.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light"></nav>
+    <!--  -->
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        // grabCursor: true,
+        navigation: {
+          nextEl: '.next',
+          prevEl: '.prev',
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          550: {
+            slidesPerView: 2,
+          },
+          780: {
+            slidesPerView: 3,
+          },
+          1025: {
+            slidesPerView: 4,
+          },
+        },
+      });
+      var swiper = new Swiper('.mySwiper1', {
+        slidesPerView: 3,
+
+        slidesPerGroup: 2,
+        slidesPerGroupSkip: 1,
+
+        spaceBetween: 55,
+
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+      });
+
+      var swiper = new Swiper('.mySwiper2', {
+        slidesPerView: 3,
+
+        slidesPerGroup: 3,
+
+        spaceBetween: 50,
+
+        loop: true,
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: 'swiper-button-prev',
+        },
+
+        // autoplay: {
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // },
+      });
+    </script>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/home.js"></script>
+
+    <!-- main script -->
+  </body>
+</html>
