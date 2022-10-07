@@ -1,5 +1,11 @@
 $(document).ready(function () {
-  $('nav').load('/navbar.html');
+  const myTimeout = setTimeout(myGreeting, 0);
+
+  function myGreeting() {
+    // alert('welcome');
+    $('nav').load('pages/navbar.html');
+  }
+
   // $('footer').load('/footer.html');
 
   let pathname = window.location.pathname;
