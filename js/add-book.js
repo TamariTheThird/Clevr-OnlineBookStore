@@ -5,7 +5,7 @@
 // }
 
 let allBooks = [];
-let i = 19;
+let i = 28;
 
 const addBook = (e) => {
   e.preventDefault(); //to stop the form submitting
@@ -14,7 +14,10 @@ const addBook = (e) => {
     id: i++,
     dateAdded: Date.now(),
     title: document.getElementById('title').value,
-    author: document.getElementById('author').value,
+    author: [
+      document.getElementById('author').value,
+      // document.getElementById('img').value,
+    ],
     category: document.getElementById('category').value,
     publisher: document.getElementById('publisher').value,
     year: document.getElementById('year').value,
@@ -36,6 +39,7 @@ const addBook = (e) => {
   //for display purposes only
   console.warn('added', { allBooks });
   let pre = document.querySelector('.all pre');
+
   pre.textContent = '\n' + JSON.stringify(allBooks, '\t', 2);
 
   //saving to localStorage

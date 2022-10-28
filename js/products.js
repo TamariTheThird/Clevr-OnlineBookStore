@@ -1,19 +1,47 @@
 $(document).ready(function () {
+  $('nav').load('/navbar.html');
+  let category_value;
+
+  function Category() {
+    switch (category_value) {
+      case '1':
+        category = 'art';
+        break;
+      case '2':
+        category = 'biographis';
+        break;
+      case '5':
+        category = 'fiction';
+        break;
+      default:
+        category = 'unknown';
+    }
+  }
+
+  // async function getAllBooks() {
+  //   let getBooks = new Promise(function () {
+  //     setTimeout(function () {
+
+  //     }, 2000);
+  //   });
+  //   console.log(await getBooks);
+  // }
+  // getAllBooks();
+
   $.ajax({
     type: 'get',
     url: '/jsons/book.json',
     data: 'text',
     success: function (response) {
-      console.log(response);
       response.forEach((el) => {
-        //  category = el.category;
-        //  Category();
-        // all product
-        let user = `  <div class="list-group">
+        category_value = el.category;
+        Category();
+
+        let single_book = `  <div class="list-group">
                   <div class="list-group-item">
                     <div class="d-flex">
                       <div class="w-25">
-                     <span class="cat"> ${el.category} </span>
+                     <span class="cat"> ${category} </span>
                         <img src="${el.image}" alt="" />
                       </div>
                       <div class="w-50">
@@ -28,33 +56,12 @@ $(document).ready(function () {
                     </div>
                   </div>
                 </div>`;
-        $('#prod').append(user);
-        console.log(user);
-        // category
+        $('#all-books').append(single_book);
+
+        // -------------------------------------------------------------------------
 
         // let li = `<li> ${day}</li>`;
-
-        //  let category_list = ` <li> <input type="radio" name="category" id="" value="${el.Category}" />
-        //            <label for="">${day}</label></li>`;
-
-        //  $('#inner-home ul').append(category_list);
-
-        // $('li').each(function () {
-        //   $('li').click(function () {
-        //     $(this).addClass('selected');
-        //     $(this).siblings().removeClass('selected');
-        //     if ($(this).hasClass('selected')) {
-
-        //     }
-        //   });
-        // });
       });
-    },
-
-    error: function (err) {
-      if (err.status == 404) {
-        $('html').load('404.html');
-      }
     },
   });
 });
